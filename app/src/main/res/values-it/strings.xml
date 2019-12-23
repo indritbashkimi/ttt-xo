@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main -->
+    <string name="app_name">TTT XO</string>
+    <string name="single_player">Un giocatore</string>
+    <string name="multi_player">Due giocatori</string>
+    <string name="difficulty">Difficoltà</string>
+    <string name="difficulty_description">@string/difficulty</string>
+    <string name="player_level_easy">Facile</string>
+    <string name="player_level_normal">Normale</string>
+    <string name="player_level_hard">Difficile</string>
+    <string name="player_level_invincible">Invincibile</string>
+    <string name="about">Informazioni</string>
+
+    <!-- Game -->
+    <string name="play_again">Nuova partita</string>
+    <string name="x_score">Punteggio X</string>
+    <string name="o_score">Punteggio O</string>
+    <string name="winner">Vincitore: %1$s</string>
+    <string name="turn">Turno: %1$s</string>
+    <string name="draw">Pareggio</string>
+
+    <!-- About -->
+    <string name="version">Versione %s</string>
+    <string name="description_content">Prova il classico gioco del tris da solo o contro i tuoi amici.</string>
+    <string name="open_source_description">This app is open source and is licensed under Apache 2.0.</string>
+    <string name="source_code_title"><u>Source code</u></string>
+    <string name="about_header_help">Aiuto</string>
+    <string name="about_send_feedback">Invia feedback</string>
+    <string name="feedback_subject">Feedback TTT XO</string>
+    <string name="feedback_chooser_title">Invia email…</string>
+
+    <!-- Licences -->
+    <string name="open_source_licenses">Open source licenses</string>
+</resources>

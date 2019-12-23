@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main -->
+    <string name="app_name">TTT XO</string>
+    <string name="single_player">One player</string>
+    <string name="multi_player">Two players</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="difficulty_description">@string/difficulty</string>
+    <string name="player_level_easy">Easy</string>
+    <string name="player_level_normal">Normal</string>
+    <string name="player_level_hard">Hard</string>
+    <string name="player_level_invincible">Invincible</string>
+    <string name="about">About</string>
+
+    <!-- Game -->
+    <string name="play_again">Play again</string>
+    <string name="x_score">X score</string>
+    <string name="o_score">O score</string>
+    <string name="winner">Winner: %1$s</string>
+    <string name="turn">Turn: %1$s</string>
+    <string name="draw">Draw</string>
+
+    <!-- About -->
+    <string name="version">Version %s</string>
+    <string name="description_content">Play the classic Tic-tac-toe game against your friends or phone.</string>
+    <string name="open_source_description">This app is open source and is licensed under Apache 2.0.</string>
+    <string name="source_code_title"><u>Source code</u></string>
+    <string name="source_code_url" translatable="false">https://github.com/indritbashkimi/ttt-xo</string>
+    <string name="about_header_help">Help</string>
+    <string name="about_send_feedback">Send feedback</string>
+    <string name="feedback_subject">TicTacToe feedback</string>
+    <string name="feedback_chooser_title">Send email…</string>
+    <string name="author_email" translatable="false">bashkimidev@gmail.com</string>
+
+    <!-- Licences -->
+    <string name="open_source_licenses">Open source licenses</string>
+</resources>

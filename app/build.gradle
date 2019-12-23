@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
+
+android {
+    compileSdkVersion versions.android.compileSdk
+    buildToolsVersion versions.android.buildTools
+    defaultConfig {
+        applicationId "com.ibashkimi.tris"
+        minSdkVersion versions.android.minSdk
+        targetSdkVersion versions.android.targetSdk
+        versionCode 4
+        versionName '1.1'
+        resConfigs "en", "it", "sq"
+    }
+    android.buildFeatures.viewBinding = true
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+        }
+        release {
+            /*lintOptions {
+                disable 'MissingTranslation'
+            }*/
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.coroutines
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.browser
+    implementation deps.androidx.constraintlayout
+    implementation deps.androidx.core
+    implementation deps.androidx.preference
+    implementation deps.lifecycle.livedata
+    implementation deps.google.material
+    implementation deps.navigation.fragment
+    implementation deps.navigation.ui
+}
+

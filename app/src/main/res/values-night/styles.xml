@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.DayNight" parent="BaseTheme" />
+
+    <style name="AppTheme.DayNight.BlackWhite">
+        <item name="colorPrimaryDark">#000</item>
+        <item name="appBarStyle">@style/AppActionBar</item>
+        <item name="toolbarStyle">@style/AppToolbar</item>
+        <item name="colorOnPrimary">@color/tint_dark</item>
+    </style>
+
+    <style name="AppTheme.DayNight.BlackWhite.Blue">
+        <item name="colorPrimary">@color/blue_200</item>
+        <item name="colorSecondary">@color/blue_200</item>
+        <item name="colorOnPrimary">#000</item>
+        <item name="colorOnSecondary">#000</item>
+    </style>
+
+    <style name="AppToolbar" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="AppActionBar" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="android:background">?android:colorBackground</item>
+    </style>
+</resources>

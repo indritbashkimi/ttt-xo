@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main -->
+    <string name="app_name">TTT XO</string>
+    <string name="single_player">Një lojtar</string>
+    <string name="multi_player">Dy lojtarë</string>
+    <string name="difficulty">Vështirësia</string>
+    <string name="difficulty_description">@string/difficulty</string>
+    <string name="player_level_easy">E lehtë</string>
+    <string name="player_level_normal">Normale</string>
+    <string name="player_level_hard">E vështirë</string>
+    <string name="player_level_invincible">E pamundur</string>
+    <string name="about">Informacion</string>
+
+    <!-- Game -->
+    <string name="play_again">Luaj përsëri</string>
+    <string name="x_score">Pikë X</string>
+    <string name="o_score">Pikë O</string>
+    <string name="winner">Fituesi: %1$s</string>
+    <string name="turn">Radha: %1$s</string>
+    <string name="draw">Barazim</string>
+
+    <!-- About -->
+    <string name="version">Versioni %s</string>
+    <string name="description_content">Luaj lojën Tic-tac-toe kundër shokëve tuaj ose kundër telefonit.</string>
+    <string name="open_source_description">This app is open source and is licensed under Apache 2.0.</string>
+    <string name="source_code_title"><u>Source code</u></string>
+    <string name="about_header_help">Ndihmë</string>
+    <string name="about_send_feedback">Dërgo vlerësim</string>
+    <string name="feedback_subject">Vlerësim TTT XO</string>
+    <string name="feedback_chooser_title">Dërgo email…</string>
+
+    <!-- Licences -->
+    <string name="open_source_licenses">Liçensat Open Source</string>
+</resources>
