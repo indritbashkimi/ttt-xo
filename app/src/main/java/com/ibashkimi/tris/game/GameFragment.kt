@@ -77,7 +77,6 @@ class GameFragment : Fragment() {
         viewModel.game.value?.let {
             GameSessionManager.saveGame(it, outState)
         }
-        ButtonFieldChannel.unregisterAll()
     }
 
     private fun onGameEvent(event: Game.Event) {
