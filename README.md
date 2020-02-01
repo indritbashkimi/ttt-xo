@@ -4,10 +4,12 @@
 
 Play the classic Tic-tac-toe game against your friends or phone.
 
-<br/>
 <a href="https://play.google.com/store/apps/details?id=com.ibashkimi.tris"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200px"/></a>
 
-# LICENSE
+## Screenshots
+|<img src="screenshots/home.png" width="250">|<img src="screenshots/level.png" width="250">|<img src="screenshots/game.png" width="250">|
+
+## License
 
     Copyright Indrit Bashkimi.
 
