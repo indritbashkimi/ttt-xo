@@ -10,11 +10,11 @@ android {
         applicationId "com.ibashkimi.tris"
         minSdkVersion versions.android.minSdk
         targetSdkVersion versions.android.targetSdk
-        versionCode 4
+        versionCode 5
         versionName '1.1'
         resConfigs "en", "it", "sq"
     }
-    android.buildFeatures.viewBinding = true
+    android.viewBinding.enabled = true
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
