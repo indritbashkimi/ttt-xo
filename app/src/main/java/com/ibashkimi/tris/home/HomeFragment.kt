@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation.findNavController
 import androidx.preference.PreferenceManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.ibashkimi.tris.R
 import com.ibashkimi.tris.databinding.FragmentHomeBinding
 import com.ibashkimi.tris.game.GameFragment
@@ -35,14 +35,13 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.playerLevelView -> {
-                AlertDialog.Builder(requireContext()).apply {
-                    setTitle(R.string.difficulty)
-                    setSingleChoiceItems(R.array.difficulty_array, playerLevel) { dialog, which ->
+                MaterialAlertDialogBuilder(requireContext())
+                    .setTitle(R.string.difficulty)
+                    .setSingleChoiceItems(R.array.difficulty_array, playerLevel) { dialog, which ->
                         playerLevel = which
                         dialog.dismiss()
                     }
-                    this.create().show()
-                }
+                    .show()
             }
             R.id.singlePlayer -> {
                 findNavController(v).navigate(
