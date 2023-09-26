@@ -10,8 +10,8 @@ android {
         applicationId "com.ibashkimi.tris"
         minSdkVersion versions.android.minSdk
         targetSdkVersion versions.android.targetSdk
-        versionCode 5
-        versionName '1.1'
+        versionCode 6
+        versionName '1.2'
         resourceConfigurations += ['en', 'it', 'sq']
     }
     android.viewBinding.enabled = true
