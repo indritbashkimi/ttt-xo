@@ -1,18 +1,18 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 apply plugin: 'androidx.navigation.safeargs'
 
 android {
-    compileSdkVersion versions.android.compileSdk
-    buildToolsVersion versions.android.buildTools
+    namespace 'com.ibashkimi.tris'
+    compileSdk versions.android.compileSdk
     defaultConfig {
         applicationId "com.ibashkimi.tris"
         minSdkVersion versions.android.minSdk
         targetSdkVersion versions.android.targetSdk
         versionCode 5
         versionName '1.1'
-        resConfigs "en", "it", "sq"
+        resourceConfigurations += ['en', 'it', 'sq']
     }
     android.viewBinding.enabled = true
     buildTypes {
@@ -32,21 +32,16 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
-}
-
-androidExtensions {
-    experimental = true
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation deps.kotlin.stdlib
     implementation deps.kotlin.coroutines
     implementation deps.androidx.appcompat
     implementation deps.androidx.browser

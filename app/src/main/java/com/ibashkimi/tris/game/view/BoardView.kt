@@ -45,7 +45,7 @@ class BoardView @JvmOverloads constructor(
 
     fun clicks(): Flow<Int> = callbackFlow {
         val observer = ButtonFieldObserver {
-            offer(it)
+            trySend(it)
         }
         if (!observers.contains(observer)) {
             observers.add(observer)

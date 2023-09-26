@@ -2,10 +2,10 @@ package com.ibashkimi.tris.model
 
 import android.os.Parcelable
 import com.ibashkimi.tris.model.player.Player
-import kotlinx.android.parcel.Parcelize
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
+import kotlinx.parcelize.Parcelize
 
 class Game(
     val board: Board,

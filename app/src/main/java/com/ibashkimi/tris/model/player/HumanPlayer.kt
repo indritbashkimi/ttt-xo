@@ -2,9 +2,9 @@ package com.ibashkimi.tris.model.player
 
 import com.ibashkimi.tris.model.Board
 import com.ibashkimi.tris.model.ButtonFieldChannel
-import kotlinx.android.parcel.Parcelize
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.take
+import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class HumanPlayer(

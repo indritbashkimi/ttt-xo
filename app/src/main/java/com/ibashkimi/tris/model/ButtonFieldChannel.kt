@@ -9,7 +9,7 @@ object ButtonFieldChannel {
     private val observers = ArrayList<ButtonFieldObserver>()
 
     fun clicks(): Flow<Int> = callbackFlow {
-        val observer = ButtonFieldObserver { offer(it) }
+        val observer = ButtonFieldObserver { trySend(it) }
         register(observer)
         awaitClose { unregister(observer) }
     }
